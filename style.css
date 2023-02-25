@@ -1,0 +1,527 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500&display=swap');
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Nunito', sans-serif;
+
+}
+
+header{
+    width: 100%;
+    height: 15%;
+    background-color:darkcyan;
+    background-image: linear-gradient(270deg,rgb(15, 8, 29),rgb(23, 20, 31));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    position: fixed;
+
+}
+.navbar  li{
+    display: inline;
+    list-style: none;
+    padding-right:30px;
+    
+}
+.navbar li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    position: relative;
+}
+.navbar li i{
+    color: #fff;
+    position: relative;
+    
+}
+.linkedin  a i {
+    color: #fff;
+    font-size: 20px;
+
+}
+.navbar li a:hover{
+    color: purple;
+
+}
+.navbar li i:hover{
+    color: purple;
+}
+.logo a{
+    text-decoration: none;
+    color: purple;
+    font-size: 30px;
+    font-weight: 600;
+}
+span{
+    color: purple;
+}
+.menubar{
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    color: darkred;
+   
+}
+.hero-section{
+    background-image: linear-gradient(270deg,rgb(27 20 41),rgb(20 15 35));
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 150px 80px;
+}
+.picture img{
+    width: 90%;
+}
+.heading h1{
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.heading h1 span{
+    color: purple;
+}
+.heading h2{
+    color: #fff;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+.heading h3{
+    color: #fff;
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.second-section{
+    background-image: linear-gradient(270deg,rgb(27 20 41),rgb(20 15 35));
+    padding: 0 80px;
+    
+}
+
+.intro{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.intro-heading h1{
+    color: #fff;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+.intro-heading h1 span{
+    color: purple;
+
+}
+.intro-heading p{
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.intro-heading p span{
+    color: purple;
+}
+.intro-pic img{
+  width: 100%;
+}
+.third-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(270deg,rgb(27 20 41),rgb(20 15 35));
+    padding: 50px 0 80px 0;
+    
+    
+}
+.third-section h1{
+    color: #fff;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.third-section h4{
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+.third-section h4 span{
+    color: purple;
+}
+.icon {
+    text-align: center;
+    
+}
+.icon i{
+    color: #fff;
+    font-size: 40px;
+    padding-left: 10px;
+}
+.icon::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: inherit;
+    width: inherit;
+    background: #d35400;
+    border-radius: 80%;
+    transform: scale(.9);
+    z-index: -1;
+    transition: .5s
+}
+.icon i:hover:before{
+    /* filter: blur(3px); */
+    transform: scale(1.2);
+    box-shadow: 0 0 19px purple;
+  }
+  .fourth-section{
+    background-image: linear-gradient(270deg,rgb(15, 8, 29),rgb(23, 20, 31));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    color: #fff;
+  }
+  .About-section{
+    padding: 150px 80px 100px 80px;
+    background-image: linear-gradient(270deg,rgb(27 20 41),rgb(20 15 35));
+    width: 100%;
+    /* height: 100%; */
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .about-picture img{
+    width: 100%;
+  }
+  .about-heading h1{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 600;
+
+  }
+  .about-heading .heading{
+    margin-bottom: 35px;
+    font-size: 20px;
+  }
+  .about-heading .heading1{
+    margin-bottom: 20px;
+  }
+  .about-heading h4{
+    color: purple;
+    margin-top: 25px;
+    font-size: 20px;
+  }
+  .about-heading p{
+    text-align: center;
+    margin-top: 10px;
+  }
+  .p-language{
+    width: 100%;
+    background-image: linear-gradient(270deg,rgb(27 20 41),rgb(20 15 35));
+    padding: 100px 100px;
+    
+  }
+  .p-language h1{
+    text-align: center;
+    margin-bottom: 50px;
+    color: #fff;
+    font-size: 40px;
+  }
+  .main-div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap:20px;
+    
+  }
+  .pic-1 img{
+    background-color: #fff;
+    width:80%;
+
+   
+  }
+  .pic-1{
+    border: 1px solid purple;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px purple;
+    
+  }
+  .pic-1:hover{
+    box-shadow: 0 0 15px purple;
+   
+  }
+  .pic-2 img{
+    width: 50%;
+  }
+  .education-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 130px 80px;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/campus\ \(2\).png);
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+  }
+  .education-heading h1{
+    margin-bottom: 10px;
+    font-size: 40px;
+
+  }
+  .education-heading h3{
+    text-align: center;
+
+  }
+  .education-details{
+    background-image: linear-gradient(270deg,rgb(27 20 41),rgb(20 15 35));
+    width: 100%;
+    color: #fff;
+    padding: 100px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .details ul li{
+    list-style: none;
+    margin-bottom: 5px;
+  }
+  .details h1{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: purple;
+  }
+  .details h3{
+    margin-top: 40px;
+    border: 1px solid purple;
+    text-align: center;
+    padding: 10px;
+    background-color: purple;
+  }
+  .details h3:hover{
+    box-shadow: 0 0 10px purple;
+  }
+  .details h3 a{
+    text-decoration: none;
+    color: #fff;
+  }
+  .education-pic img{
+    width:90%
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1000px) {
+    .navbar{
+        width: 100%;
+        position: absolute;
+        right:100%;
+        top: 0;
+        background-image: linear-gradient(270deg,rgb(27 20 41),rgb(20 15 35));
+        height: 800%;
+        padding: 20px;
+        transition: all 1s;
+    
+    }
+    .active{
+        right: 0;
+    }
+    .navbar li {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        padding-top: 40px;
+    }
+    .menubar{
+        display: flex;
+        z-index: 999;
+    }
+
+    .hero-section{
+        gap: 50px;
+        
+    }
+    .picture img{
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .intro{
+        flex-wrap: wrap;
+        padding: 50px 0;
+    }
+    .About-section{
+        flex-wrap: wrap;
+        padding: 150px 40px;
+    }
+}
+
+
+
+
+
+@media (max-width: 830px) {
+    .hero-section{
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        padding: 150px 10px;
+    }
+    .picture img{
+        width: 80%;
+        
+    }
+    .heading h1{
+        font-size: 40px;
+        
+    }
+    .heading h2{
+        font-size: 30px;
+        text-align: center;
+        
+    }
+
+   .heading h3{
+        font-size: 20px;
+        
+    }
+    .intro-heading h1{
+        
+        font-size: 20px;
+       
+    }
+    
+    .intro-heading p{
+        
+        font-size: 15px;
+        
+    }
+    .main-div{
+        flex-wrap: wrap;
+    }
+    .p-language h1{
+        font-size: 30px;
+    }
+    .p-language{
+        padding: 100px 50px;
+    }
+    .education-details{
+        flex-wrap: wrap;
+        padding: 100px 50px;
+
+    }
+    .details ul li{
+        margin-bottom: 15px;
+    }
+    .education-pic img{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .education-section{
+        
+        padding: 130px 50px;
+       
+    }
+    .education-heading h1{
+        font-size: 30px;
+        text-align: center;
+    }
+      
+
+    
+    
+    
+    
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 500px) {
+    .hero-section{
+        padding: 150px 10px;
+    }
+
+    .picture img{
+        width: 80%;
+    }
+    .heading h1{
+        font-size: 30px;
+        
+    }
+    .logo a{
+        font-size: 20px;
+    }
+    .menubar{
+        font-size: 20px;
+    }
+    .intro{
+        flex-wrap: wrap;
+        padding: 50px 0;
+    }
+    .fourth-section{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .find h1{
+        font-size: 30px;
+
+    }
+    .second-section{
+        padding: 0 30px;
+    }
+    .education-section{
+        
+        padding: 130px 25px;
+       
+    }
+
+}
+
+
+
+
+
+
+
+
+
